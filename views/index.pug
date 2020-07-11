@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Anthony Daher
+
+  div
+    h4.title Sync to ERC20 transfers from the latest block
+    p POST /api/v1/transactions/< ERC20 asset address >?owner=< address >
+    h4.title List stored ERC20 transactions
+    p GET /api/v1/transactions/< ERC20 asset address >?owner=< address >&limit=< limit >&skip=< skip >
